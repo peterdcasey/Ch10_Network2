@@ -15,9 +15,6 @@ public class NewsFeedTest
     private MessagePost messageP1;
     private PhotoPost photoPos1;
 
-    
-    
-
     /**
      * Default constructor for test class NewsFeedTest
      */

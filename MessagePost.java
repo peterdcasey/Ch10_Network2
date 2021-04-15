@@ -8,8 +8,7 @@ import java.util.ArrayList;
  * @author Michael Kölling and David J. Barnes
  * @version 0.2
  */
-public class MessagePost extends CommentedPost
-{
+public class MessagePost extends CommentedPost {
     private String message;  // an arbitrarily long, multi-line message
 
     /**
@@ -34,11 +33,9 @@ public class MessagePost extends CommentedPost
 
     /**
      * Return the text of this post.
-     * 
      * @return The post's message text.
      */
-    public String getText()
-    {
+    public String getText() {
         return message;
     }
 }

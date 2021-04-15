@@ -5,8 +5,7 @@
  * @author (your name)
  * @version (a version number or a date)
  */
-public class EventPost extends Post
-{
+public class EventPost extends Post {
     // instance variables - replace the example below with your own
     private String event;
 

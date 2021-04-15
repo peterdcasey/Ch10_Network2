@@ -6,8 +6,7 @@ import java.util.ArrayList;
  * @author (your name)
  * @version (a version number or a date)
  */
-public class CommentedPost extends Post
-{
+public class CommentedPost extends Post {
     private int likes;
     private ArrayList<String> comments;
     
@@ -20,16 +19,14 @@ public class CommentedPost extends Post
     /**
      * Record one more 'Like' indication from a user.
      */
-    public void like()
-    {
+    public void like() {
         likes++;
     }
 
     /**
      * Record that a user has withdrawn his/her 'Like' vote.
      */
-    public void unlike()
-    {
+    public void unlike() {
         if (likes > 0) {
             likes--;
         }
@@ -40,8 +37,7 @@ public class CommentedPost extends Post
      * 
      * @param text  The new comment to add.
      */
-    public void addComment(String text)
-    {
+    public void addComment(String text) {
         comments.add(text);
     }
     
@@ -60,8 +56,8 @@ public class CommentedPost extends Post
             System.out.println("   No comments.");
         }
         else {
-            System.out.println("   " + comments.size() + " comment(s). Click here to view.");
+            System.out.println("   " + comments.size() 
+                                + " comment(s). Click here to view.");
         }        
     }
-
 }

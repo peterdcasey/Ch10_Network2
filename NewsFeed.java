@@ -16,23 +16,21 @@ import java.util.*;
 public class NewsFeed
 {
     private ArrayList<Post> posts;
-
+    private List<String> x;
+    
     /**
      * Construct an empty news feed.
      */
-    public NewsFeed()
-    {
+    public NewsFeed() {
         posts = new ArrayList<>();
-        java.util.List<String> x = new LinkedList<>();
+        x = new LinkedList<>();
     }
 
     /**
      * Add a post to the news feed.
-     * 
      * @param post  The post to be added.
      */
-    public void addPost(Post post)
-    {
+    public void addPost(Post post) {
         posts.add(post);
     }
 
@@ -43,6 +41,7 @@ public class NewsFeed
      */
     public void show() {   
         System.out.println("Post Listing\n");
+        
         // display all posts
         for(Post post : posts) {
             post.display();
