@@ -31,9 +31,10 @@ public class NewsFeedTest
     public void setUp()
     {
         newsFeed1 = new NewsFeed();
-        messageP1 = new MessagePost();
+        messageP1 = new MessagePost("Bob", "nice work");
         newsFeed1.addPost(messageP1);
-        photoPos1 = new PhotoPost("bob photo guy", "cool photo", "wow");
+        photoPos1 = new PhotoPost("Jan", "coolpic.jpg", "Snowman");
+        newsFeed1.addPost(photoPos1);
     }
 
     /**

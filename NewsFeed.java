@@ -1,5 +1,4 @@
 import java.util.*;
-
 /**
  * The NewsFeed class stores news posts for the news feed in a
  * social network application.
