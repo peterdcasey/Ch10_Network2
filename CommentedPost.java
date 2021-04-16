@@ -6,7 +6,7 @@ import java.util.ArrayList;
  * @author (your name)
  * @version (a version number or a date)
  */
-public class CommentedPost extends Post {
+public abstract class CommentedPost extends Post {
     private int likes;
     private ArrayList<String> comments;
     

@@ -12,8 +12,8 @@ public class EventPost extends Post {
     /**
      * Constructor for objects of class EventPost
      */
-    public EventPost(String event, String user) {
-        super(user);
+    public EventPost(String event) {
+        super("System");
         this.event = event;
     }
 

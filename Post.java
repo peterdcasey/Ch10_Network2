@@ -8,7 +8,7 @@ import java.util.ArrayList;
  * @author Michael Kölling and David J. Barnes
  * @version 0.2
  */
-public class Post {
+public abstract class Post {
     private String username;  // username of the post's author
     private long timestamp;
     //private MessagePost mp = new MessagePost();  BAAAAD
@@ -20,6 +20,10 @@ public class Post {
     public Post(String author) {
         username = author;
         timestamp = System.currentTimeMillis();
+    }
+    
+    private String getAuthor() {
+         return username;   
     }
     
     // public Post() {
@@ -42,7 +46,7 @@ public class Post {
      * in a web browser for now.)
      */
     public void display() {
-        System.out.println(username);
+        System.out.println( getAuthor() );
         System.out.print(timeString(timestamp));
     }
     

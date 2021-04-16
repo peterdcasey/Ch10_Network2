@@ -17,14 +17,15 @@ public class MessagePost extends CommentedPost {
      * @param author    The username of the author of this post.
      * @param text      The text of this post.
      */
-    public MessagePost(String author, String text) {
+    public MessagePost(String author, String message) {
         super(author);
-        message = text;
+        this.message = message;
     }
     
     public void display() {
         super.display();
-        System.out.println("MessagePost.display()");
+                             //System.out.println( getAuthor() );
+        System.out.println("MessagePost.display(): " + message);
     }
     
     public MessagePost() {
